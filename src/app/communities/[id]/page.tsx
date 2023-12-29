@@ -55,7 +55,7 @@ export async function generateMetadata(
   function generateImage() {
     return (
       process.env.NEXT_PUBLIC_IMAGE_API_URL +
-      "/media/sm/" +
+      "/media/xs/" +
       community.image +
       ".webp"
     );
