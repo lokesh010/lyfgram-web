@@ -22,6 +22,8 @@ async function getCommunity(id: number | string) {
     process.env.NEXT_PUBLIC_BASE_API_URL + "/communities/" + id
   ).then((r) => r.json());
 
+  console.log({ community });
+
   return community;
 }
 
@@ -31,8 +33,8 @@ export async function generateStaticParams() {
     process.env.NEXT_PUBLIC_BASE_API_URL + "/communities/"
   ).then((res) => res.json());
 
-  return communities.map(({ name }: any) => ({
-    id: name,
+  return communities.map(({ id }: any) => ({
+    id,
   }));
 }
 
