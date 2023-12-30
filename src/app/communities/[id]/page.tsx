@@ -22,8 +22,6 @@ async function getCommunity(id: number | string) {
     process.env.NEXT_PUBLIC_BASE_API_URL + "/communities/" + id
   ).then((r) => r.json());
 
-  console.log({ community });
-
   return community;
 }
 
@@ -55,8 +53,9 @@ export async function generateMetadata(
   function generateImage() {
     return (
       process.env.NEXT_PUBLIC_IMAGE_API_URL +
-      "/media/original/" +
-      community.image
+      "/media/og/" +
+      community.image +
+      ".png"
     );
   }
 
