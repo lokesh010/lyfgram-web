@@ -25,5 +25,5 @@ jobs:
       - run: npm i
       - run: rm -rf .next
       - run: npm run build --if-present
-      - run: pm2 del lyfgram-web:3000
+      - run: pm2 del lyfgram-web:3000 || true
       - run: pm2 start npm --name "lyfgram-web:3000" -- start
