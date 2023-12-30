@@ -9,10 +9,7 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-
-    env:
-      NEXT_PUBLIC_BASE_API_URL: https://api.everestdiplomat.org/v1
-      NEXT_PUBLIC_IMAGE_API_URL: https://api.everestdiplomat.org
+    environment: production
 
     steps:
       - uses: actions/checkout@v3
