@@ -1,0 +1,8 @@
+{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.lyfgram",
+    "sha256_cert_fingerprints": ["F2:B4:3E:65:61:21:C0:02:A1:90:5A:94:48:2F:FE:53:42:03:D3:6F:DE:07:72:22:5F:BD:4B:83:5E:B9:47:7B"]
+  }
+}
