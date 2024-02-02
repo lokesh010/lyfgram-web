@@ -1,4 +1,4 @@
-{
+[{
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
@@ -7,4 +7,4 @@
       "F2B43E656121C002A1905A94482FFE534203D36FDE0772225FBD4B835EB9477B"
     ]
   }
-}
+}]
