@@ -1,4 +1,5 @@
 import { Metadata, ResolvingMetadata } from "next";
+import { useEffect } from "react";
 
 // ui
 export default async function CommunityDetailPage({
@@ -9,9 +10,16 @@ export default async function CommunityDetailPage({
   const { id } = params;
   const community = await getCommunity(id);
 
+  function deepLink() {
+    window.location.href = "lyfgram://communities/" + id;
+  }
+
   return (
     <div>
       <p>{community.name}</p>
+      <button className="p-2 bg-white" onClick={deepLink}>
+        Redirect
+      </button>
     </div>
   );
 }
