@@ -7,6 +7,11 @@ const nextConfig = {
         destination: "lyfgram:///communities/:id",
         permanent: true,
       },
+      {
+        source: "/posts/:id",
+        destination: "lyfgram:///posts/:id",
+        permanent: true,
+      },
     ];
   },
 };
